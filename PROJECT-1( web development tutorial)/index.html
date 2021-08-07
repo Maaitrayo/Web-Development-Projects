@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset*/
+        body {
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            color: white;
+        }
+
+        .left {
+            /*border: 2px solid red;*/
+            display: inline-block;
+            position: absolute;
+            left: 23px;
+            top: 20px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 76px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 14px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .mid {
+            /*border: 2px solid green;*/
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /*border: 2px solid yellow;*/
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(161, 155, 155);
+        }
+
+        .btn {
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(86, 90, 89);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 38px 461px;
+            padding: 44px;
+            width: 33%;
+            border-radius: 10px;
+
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhaina 2', cursive;
+            text-align: center;
+            display: block;
+            width: 340px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 9px auto;
+            font-size: 17px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 71%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo-->
+        <div class="left">
+            <img src="img/gym.jpg" alt="">
+            <div>Rick Fitness</div>
+        </div>
+
+        <!-- mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of kolkata now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email-id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone-Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
